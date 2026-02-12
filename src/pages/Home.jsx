@@ -86,9 +86,20 @@ export default function Home() {
           <h1 className="text-6xl font-bold text-stone-900 mb-4">
             Locomotive Scroll
           </h1>
-          <p className="text-xl text-stone-600">
+          <p className="text-xl text-stone-600 mb-6">
             A collection of scroll effects and animations
           </p>
+          <div className="inline-block">
+            <a
+              href="https://medium.com/@caden0002/scroll-effects-with-react-using-locomotive-scroll-v5-82d53377db99"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 px-6 py-3 bg-stone-900 text-white rounded-lg hover:bg-stone-800 transition-colors duration-200 shadow-md hover:shadow-lg"
+            >
+              <span>Medium Article</span>
+              <span className="text-sm">→</span>
+            </a>
+          </div>
         </header>
 
         {/* Scroll Examples Grid */}
