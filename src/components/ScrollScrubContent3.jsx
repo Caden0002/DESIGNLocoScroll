@@ -104,30 +104,33 @@ const ScrollScrubContent3 = () => {
   const containerRef = useRef(null);
 
   return (
-    <div ref={containerRef} className="min-h-[300vh] py-24">
-      <div className="max-w-4xl mx-auto px-8">
-        <div className="space-y-16">
+    <div
+      ref={containerRef}
+      className="min-h-[300vh] py-12 sm:py-16 md:py-24 bg-stone-50"
+    >
+      <div className="max-w-4xl mx-auto px-4 sm:px-6 md:px-8">
+        <div className="space-y-12 sm:space-y-16">
           <div className="h-screen flex items-center" />
 
           <div>
-            <h1 className="text-8xl font-bold mb-8 leading-tight">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold mb-6 sm:mb-8 leading-tight">
               <GradientScrubText text="Scroll Scrubbing Text" />
             </h1>
-            <p className="text-2xl mb-12 leading-tight">
+            <p className="text-lg sm:text-xl md:text-2xl mb-8 sm:mb-12 leading-tight">
               <GradientScrubText text="Watch the text fill from left to right as you scroll" />
             </p>
           </div>
 
-          <div className="space-y-8">
-            <p className="text-xl leading-relaxed">
+          <div className="space-y-6 sm:space-y-8">
+            <p className="text-base sm:text-lg md:text-xl leading-relaxed">
               <GradientScrubText text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat." />
             </p>
 
-            <p className="text-xl leading-relaxed">
+            <p className="text-base sm:text-lg md:text-xl leading-relaxed">
               <GradientScrubText text="Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." />
             </p>
 
-            <p className="text-xl leading-relaxed">
+            <p className="text-base sm:text-lg md:text-xl leading-relaxed">
               <GradientScrubText text="Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo." />
             </p>
           </div>

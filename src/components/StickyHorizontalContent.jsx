@@ -100,10 +100,7 @@ export default function StickyHorizontalContent() {
             ref={textRef}
             className="whitespace-nowrap will-change-transform"
           >
-            <span
-              className="font-bold text-black px-8 inline-block"
-              style={{ fontSize: "calc(0.6041666667*49*var(--vw, 1vw))" }}
-            >
+            <span className="font-bold text-black px-4 md:px-8 inline-block sticky-horizontal-text">
               {text}
             </span>
           </div>

@@ -80,13 +80,13 @@ const scrollExamples = [
 export default function Home() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-stone-50 to-stone-100">
-      <div className="max-w-7xl mx-auto px-8 py-16">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-8 py-8 sm:py-12 md:py-16">
         {/* Header */}
-        <header className="text-center mb-16">
-          <h1 className="text-6xl font-bold text-stone-900 mb-4">
+        <header className="text-center mb-12 md:mb-16">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-stone-900 mb-4">
             Locomotive Scroll
           </h1>
-          <p className="text-xl text-stone-600 mb-6">
+          <p className="text-lg sm:text-xl text-stone-600 mb-6 px-4">
             A collection of scroll effects and animations
           </p>
           <div className="inline-block">
@@ -94,7 +94,7 @@ export default function Home() {
               href="https://medium.com/@caden0002/scroll-effects-with-react-using-locomotive-scroll-v5-82d53377db99"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-6 py-3 bg-stone-900 text-white rounded-lg hover:bg-stone-800 transition-colors duration-200 shadow-md hover:shadow-lg"
+              className="inline-flex items-center gap-2 px-4 sm:px-6 py-2 sm:py-3 bg-stone-900 text-white rounded-lg hover:bg-stone-800 transition-colors duration-200 shadow-md hover:shadow-lg text-sm sm:text-base"
             >
               <span>Medium Article</span>
               <span className="text-sm">→</span>
@@ -106,22 +106,22 @@ export default function Home() {
         <div className="space-y-12">
           {scrollExamples.map((category, categoryIndex) => (
             <section key={categoryIndex}>
-              <h2 className="text-2xl font-semibold text-stone-800 mb-6">
+              <h2 className="text-xl sm:text-2xl font-semibold text-stone-800 mb-4 sm:mb-6">
                 {category.category}
               </h2>
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
                 {category.items.map((item, itemIndex) => (
                   <Link key={itemIndex} to={item.path} className="block group">
                     <div
-                      className={`${item.color} rounded-lg p-6 transition-all duration-200 transform group-hover:scale-105 shadow-sm group-hover:shadow-md`}
+                      className={`${item.color} rounded-lg p-4 sm:p-6 transition-all duration-200 transform group-hover:scale-105 shadow-sm group-hover:shadow-md`}
                     >
-                      <h3 className="text-xl font-semibold text-stone-900 mb-2">
+                      <h3 className="text-lg sm:text-xl font-semibold text-stone-900 mb-2">
                         {item.title}
                       </h3>
-                      <p className="text-sm text-stone-600">
+                      <p className="text-xs sm:text-sm text-stone-600">
                         {item.description}
                       </p>
-                      <div className="mt-4 text-sm font-medium text-stone-700 group-hover:translate-x-1 transition-transform inline-block">
+                      <div className="mt-3 sm:mt-4 text-xs sm:text-sm font-medium text-stone-700 group-hover:translate-x-1 transition-transform inline-block">
                         View Demo →
                       </div>
                     </div>

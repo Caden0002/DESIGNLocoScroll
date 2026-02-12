@@ -9,11 +9,18 @@ export default function HorizontalScroll() {
 
   useEffect(() => {
     if (wrapperRef.current && contentRef.current) {
+      // Detect if device is touch-enabled
+      const isTouchDevice =
+        "ontouchstart" in window || navigator.maxTouchPoints > 0;
+
       locoRef.current = new LocomotiveScroll({
         lenisOptions: {
           orientation: "horizontal", // Horizontal scrolling
           lerp: 0.1,
           smoothWheel: true,
+          smoothTouch: isTouchDevice,
+          touchMultiplier: 2,
+          wheelMultiplier: 1,
           wrapper: wrapperRef.current,
           content: contentRef.current,
         },

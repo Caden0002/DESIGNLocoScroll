@@ -155,13 +155,13 @@ const GradientScrubText = ({ text = "", className = "" }) => {
 
 const ScrollScrubContent2 = () => {
   return (
-    <div className="min-h-[200vh] py-[30vh] bg-black">
-      <div className="max-w-4xl mx-auto px-8">
-        <div className="space-y-16">
+    <div className="min-h-[200vh] py-[20vh] sm:py-[25vh] md:py-[30vh] bg-black">
+      <div className="max-w-4xl mx-auto px-4 sm:px-6 md:px-8">
+        <div className="space-y-12 sm:space-y-16">
           <div className=" flex items-center" />
 
           <div>
-            <p className="text-xl leading-relaxed">
+            <p className="text-base sm:text-lg md:text-xl leading-relaxed">
               <GradientScrubText text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur." />
             </p>
           </div>

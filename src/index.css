@@ -38,3 +38,15 @@
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
+
+/* Sticky Horizontal Text - Mobile responsive font size */
+.sticky-horizontal-text {
+  font-size: calc(0.6041666667 * 49 * var(--vw, 1vw));
+}
+
+/* On mobile, use a more reasonable clamp to prevent overflow */
+@media (max-width: 768px) {
+  .sticky-horizontal-text {
+    font-size: clamp(2rem, 8vw, calc(0.6041666667 * 49 * var(--vw, 1vw)));
+  }
+}

@@ -7,10 +7,18 @@ export default function ParallaxScroll() {
   const locoRef = useRef(null);
 
   useEffect(() => {
+    // Detect if device is touch-enabled
+    const isTouchDevice =
+      "ontouchstart" in window || navigator.maxTouchPoints > 0;
+
     locoRef.current = new LocomotiveScroll({
       lenisOptions: {
         orientation: "vertical",
         lerp: 0.08,
+        smoothWheel: true,
+        smoothTouch: isTouchDevice,
+        touchMultiplier: 2,
+        wheelMultiplier: 1,
       },
     });
 

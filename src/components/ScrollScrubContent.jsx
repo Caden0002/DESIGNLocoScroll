@@ -64,20 +64,20 @@ const ScrollScrubContent = () => {
   const containerRef = useRef(null);
 
   return (
-    <div ref={containerRef} className="min-h-[300vh] py-24">
-      <div className="max-w-4xl mx-auto px-8">
-        <div className="space-y-16">
+    <div ref={containerRef} className="min-h-[300vh] py-12 md:py-24">
+      <div className="max-w-4xl mx-auto px-4 md:px-8">
+        <div className="space-y-8 md:space-y-16">
           <div>
-            <h1 className="text-8xl font-bold mb-8">
+            <h1 className="text-4xl md:text-6xl lg:text-8xl font-bold mb-4 md:mb-8">
               <ScrubbingText text="Scroll Scrubbing Text" />
             </h1>
-            <p className="text-2xl mb-12">
+            <p className="text-lg md:text-xl lg:text-2xl mb-6 md:mb-12">
               <ScrubbingText text="Watch each word turn black as you scroll, grey when scrolling up" />
             </p>
           </div>
 
-          <div className="space-y-8">
-            <p className="text-xl leading-relaxed">
+          <div className="space-y-6 md:space-y-8">
+            <p className="text-base md:text-lg lg:text-xl leading-relaxed">
               <ScrubbingText text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat." />
             </p>
 
